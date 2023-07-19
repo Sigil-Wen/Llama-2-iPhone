@@ -15,6 +15,7 @@
 		FADE150F2A6835780044CD98 /* LlamaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE150E2A6835780044CD98 /* LlamaUITests.swift */; };
 		FADE15112A6835780044CD98 /* LlamaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE15102A6835780044CD98 /* LlamaUITestsLaunchTests.swift */; };
 		FADE151F2A6836470044CD98 /* Chat in Frameworks */ = {isa = PBXBuildFile; productRef = FADE151E2A6836470044CD98 /* Chat */; };
+		FADE15212A6838500044CD98 /* LlamaMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE15202A6838500044CD98 /* LlamaMessageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		FADE150A2A6835780044CD98 /* LlamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LlamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADE150E2A6835780044CD98 /* LlamaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamaUITests.swift; sourceTree = "<group>"; };
 		FADE15102A6835780044CD98 /* LlamaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FADE15202A6838500044CD98 /* LlamaMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamaMessageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				FADE14F32A6835770044CD98 /* LlamaApp.swift */,
 				FADE14F52A6835770044CD98 /* ContentView.swift */,
+				FADE15202A6838500044CD98 /* LlamaMessageModel.swift */,
 				FADE14F72A6835780044CD98 /* Assets.xcassets */,
 				FADE14F92A6835780044CD98 /* Preview Content */,
 			);
@@ -267,6 +270,7 @@
 			files = (
 				FADE14F62A6835770044CD98 /* ContentView.swift in Sources */,
 				FADE14F42A6835770044CD98 /* LlamaApp.swift in Sources */,
+				FADE15212A6838500044CD98 /* LlamaMessageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

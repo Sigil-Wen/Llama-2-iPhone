@@ -9,11 +9,21 @@ import Chat
 import SwiftUI
 
 struct ContentView: View {
-    @State var messages: [Message] = []
-
+    
+    @StateObject var viewModel:  LlamaMessageModel = LlamaMessageModel()
+    
     var body: some View {
-        ChatView(messages: messages) { draft in
-            yourViewModel.send(draft: draft)
+        ChatView(messages: viewModel.messages) { draft in
+            viewModel.send(draft: draft)
+        } messageBuilder: { message, positionInGroup, showAttachmentClosure in
+            VStack {
+                Text(message.text)
+                if !message.attachments.isEmpty {
+                    ForEach(message.attachments, id: \.id) { at in
+                        AsyncImage(url: at.thumbnail)
+                    }
+                }
+            }
         }
     }
 }
